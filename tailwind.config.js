@@ -11,7 +11,7 @@ export default {
           silkscreen: ['Silkscreen', 'cursive'],
         },
         screens: {
-          xs: '320px',
+          xs: '300px',
           sm: '480px',
           md: '768px',
           lg: '950px',
