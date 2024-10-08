@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.x-centered {
+    position: absolute;
+    left: -50%;
+    transform: translateX(-50%);
+}
