@@ -27,6 +27,10 @@ export default {
         },
         backgroundImage: {
           'pp-gradient': 'linear-gradient(to right, #9600CC, #ff00f7)',
+          'dark-text-gradient': 'linear-gradient(to bottom, #FFFFFF, #B372CF)',
+          'light-text-gradient': 'linear-gradient(to bottom, #000000, #B372CF)',
+          'pink-blue-gradient': 'linear-gradient(to right, rgb(250, 78, 10), rgb(247, 12, 204), rgb(0, 106, 255), rgb(48, 248, 255))'
+          
         },   
     },
   },

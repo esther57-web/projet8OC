@@ -18,3 +18,28 @@
     background-color: rgb(236, 236, 236);
     color: black;
 }
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes cursor {
+    from {
+      border-right-color: transparent;
+    }
+    to {
+      border-right-color: black; /* ou la couleur que tu souhaites */
+    }
+  }
+  
+  .typing-animation {
+    animation: typing 2s steps(16), cursor 0.4s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid black; /* ou la couleur que tu souhaites */
+  }
