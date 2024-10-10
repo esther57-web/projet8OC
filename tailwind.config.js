@@ -14,8 +14,8 @@ export default {
           xs: '300px',
           sm: '600px',
           md: '768px',
-          lg: '950px',
-          xl: '1440px',
+          lg: '1068px',
+          xl: '1400px',
         },
         colors: {
           'blue': '#1fb6ff',
@@ -27,9 +27,9 @@ export default {
         },
         backgroundImage: {
           'pp-gradient': 'linear-gradient(to right, #9600CC, #ff00f7)',
-          'dark-text-gradient': 'linear-gradient(to bottom, #FFFFFF, #B372CF)',
+          'dark-text-gradient': 'linear-gradient(to right, #B372CF, #FFFFFF, #B372CF)',
           'light-text-gradient': 'linear-gradient(to bottom, #000000, #B372CF)',
-          'pink-blue-gradient': 'linear-gradient(to right, rgb(250, 78, 10), rgb(247, 12, 204), rgb(0, 106, 255), rgb(48, 248, 255))'
+          'pink-blue-gradient': 'linear-gradient(to right, rgb(247, 12, 204), rgb(0, 106, 255))'
           
         },   
     },
