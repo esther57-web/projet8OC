@@ -43,3 +43,7 @@
     overflow: hidden;
     border-right: 2px solid black; /* ou la couleur que tu souhaites */
   }
+
+.initial {
+    position: initial !important;
+}
