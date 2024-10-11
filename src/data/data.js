@@ -134,3 +134,26 @@ export const allSkills = [
     rate: 3
   }
 ];
+
+export const portfolioProjects = [
+  {
+    name: 'Booki',
+    technologies: ['HTML', 'CSS'],
+    image: '',
+    liveUrl: '',
+    description: '',
+    category: 'Front-end',
+    repo: '',
+    skill: ''
+  },
+  {
+    name: '',
+    technologies: ['', ''],
+    image: '',
+    liveUrl: '',
+    description: '',
+    category: '',
+    repo: '',
+    skill: ''
+  },
+]

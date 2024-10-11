@@ -29,7 +29,8 @@ export default {
           'pp-gradient': 'linear-gradient(to right, #9600CC, #ff00f7)',
           'dark-text-gradient': 'linear-gradient(to right, #B372CF, #FFFFFF, #B372CF)',
           'light-text-gradient': 'linear-gradient(to bottom, #000000, #B372CF)',
-          'pink-blue-gradient': 'linear-gradient(to right, rgb(247, 12, 204), rgb(0, 106, 255))'
+          'pink-blue-gradient': 'linear-gradient(to right, rgb(247, 12, 204), rgb(0, 106, 255))',
+          'h2-white-gradient': 'linear-gradient(to right, #B4B4B4, #FFFFFF, #B4B4B4)'
           
         },   
     },
