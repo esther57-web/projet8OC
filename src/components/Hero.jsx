@@ -11,7 +11,7 @@ const Hero = () => {
     const { theme } = useTheme();
   
   return (
-    <section className={`flex h-screen xs:flex-col-reverse xs:items-center xs:justify-center overflow-hidden md:flex-row md:px-8 ${theme === "dark" ? "dark" : "light"}`} style={{backgroundImage: `url(${theme === "dark" ? stars : ""})`}}>
+    <section className={`flex h-screen xs:flex-col-reverse xs:items-center xs:justify-center overflow-hidden md:flex-row md:px-8 ${theme === "dark" ? "dark mask-hero" : "light"}`} style={{backgroundImage: `url(${theme === "dark" ? stars : ""})`}}>
         
         <div className='z-30 xs:relative xs:top-32 md:-top-2  flex xs:flex-col xs:items-center md:items-start xs:gap-4 xs:w-[70%] md:w-[40%] md:initial md:gap-8'>
             <div className='flex'>
@@ -32,8 +32,6 @@ const Hero = () => {
                 <img className='relative top-4' src={theme === "dark" ? darkProfilPic : lightProfilPic} alt='photo d&apos;Esther'></img>
             </div> 
         </div>
-         
-        
         
         {theme === "dark" ? 
         <div className='z-[1]'>
@@ -45,8 +43,8 @@ const Hero = () => {
                     <div className='h-2 w-2 bg-white'></div>
                 </div>
             </div>
-            <div className='absolute xs:h-[400px] xs:w-[400px] rounded-full border border-white/30 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-dashed'></div>
-            <div className='absolute h-[550px] w-[550px] rounded-full border border-white opacity-30 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
+            <div className='absolute  xs:h-[400px] xs:w-[400px] rounded-full border border-white/30 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-dashed'></div>
+            <div className='absolute w-max-full h-[550px] w-[550px] rounded-full border border-white opacity-30 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
             <div className='absolute h-2 w-2 left-0 bg-white rounded-full top-1/2 -translate-x-1/2 -translate-y-1/2'></div>
                 <div className='absolute h-2 w-2 left-0 bg-white rounded-full top-1/2 -translate-x-1/2 -translate-y-1/2'></div>
                 <div className='absolute h-5 w-5 left-full border border-white rounded-full top-1/2 -translate-x-1/2 -translate-y-1/2 inline-flex items-center justify-center'>

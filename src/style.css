@@ -49,3 +49,21 @@
 .initial {
     position: initial !important;
 }
+
+
+.mask {
+    mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 600px) {
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+}
