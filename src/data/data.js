@@ -66,3 +66,71 @@ export const activitiesSlider = [
     lightImg: lightMaintenance
   }
 ];
+
+import darkHtml from './../assets/dark/html.svg'
+import lightHtml from './../assets/light/html.svg'
+import darkCss from './../assets/dark/css.svg'
+import lightCss from './../assets/light/css.svg'
+import darkSass from './../assets/dark/sass.svg'
+import lightSass from './../assets/light/sass.svg'
+import darkTailwind from './../assets/dark/tailwind.svg'
+import lightTailwind from './../assets/light/tailwind.svg'
+import darkJavascript from './../assets/dark/js.svg'
+import lightJavascript from './../assets/light/js.svg'
+import darkReact from './../assets/dark/react.svg'
+import lightReact from './../assets/light/react.svg'
+import darkNode from './../assets/dark/node.svg'
+import lightNode from './../assets/light/node.svg'
+import darkMongo from './../assets/dark/mongodb.svg'
+import lightMongo from './../assets/light/mongodb.svg'
+
+export const allSkills = [
+  {
+    name: 'HTML 5',
+    darkSkill: darkHtml,
+    lightSkill: lightHtml,
+    rate: 9
+  },
+  {
+    name: 'CSS 3',
+    darkSkill: darkCss,
+    lightSkill: lightCss,
+    rate: 7
+  },
+  {
+    name: 'SASS',
+    darkSkill: darkSass,
+    lightSkill: lightSass,
+    rate: 7
+  },
+  {
+    name: 'Tailwind',
+    darkSkill: darkTailwind,
+    lightSkill: lightTailwind,
+    rate: 7
+  },
+  {
+    name: 'Javascript',
+    darkSkill: darkJavascript,
+    lightSkill: lightJavascript,
+    rate: 7
+  },
+  {
+    name: 'React',
+    darkSkill: darkReact,
+    lightSkill: lightReact,
+    rate: 8
+  },
+  {
+    name: 'Node.js',
+    darkSkill: darkNode,
+    lightSkill: lightNode,
+    rate: 3
+  },
+  {
+    name: 'MongoDB',
+    darkSkill: darkMongo,
+    lightSkill: lightMongo,
+    rate: 3
+  }
+];

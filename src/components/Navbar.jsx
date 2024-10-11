@@ -20,7 +20,7 @@ const Navbar = () => {
     const { theme, toggleTheme } = useTheme();
 
   return (
-    <header className={`flex z-50 sticky top-0 items-center xs:px-2 xs:py-2 w-full border-b border-cyan-900 lg:justify-between sm:justify-normal sm:py-0 lg:px-4 ${theme === "dark"? "dark" : "light"}`}> 
+    <header className={`flex z-50 fixed top-0 items-center xs:px-2 xs:py-2 w-full border-b border-cyan-900 lg:justify-between sm:justify-normal sm:py-0 sm:px-6 lg:px-12 ${theme === "dark"? "dark" : "light"}`}> 
         <h2 className='xs:text-lg font-silkscreen md:text-4xl'>EO</h2>
         <div className="flex xs:flex-row-reverse xs:w-full items-center relative sm:flex-row sm:justify-center lg:justify-end"> 
             <div className='flex md:mr-4 sm:relative'>

@@ -4,6 +4,7 @@ import AboutMe from "./components/AboutMe"
 import Activity from "./components/Activity"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
+import Skills from "./components/Skills"
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Hero />
         <Activity />
         <AboutMe />
+        <Skills />
       </main>
       <footer></footer>
     </div>
