@@ -7,10 +7,13 @@ export const ThemeProvider = ({ children }) => {
     const [theme, setTheme] = useState('dark');
   
     useEffect(() => {
-      const savedTheme = localStorage.getItem('theme');
-      if (savedTheme) {
-        setTheme(savedTheme);
-      }
+      // Vérifie si un thème est déjà enregistré
+  const savedTheme = localStorage.getItem('theme');
+  
+  // Si le thème enregistré est 'light', on le remplace par 'dark'
+  if (savedTheme === 'light') {
+    setTheme('dark');
+  }
     }, []);
 
   
