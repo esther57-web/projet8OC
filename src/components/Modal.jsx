@@ -1,4 +1,4 @@
-import React from 'react'
+
 import PropTypes from 'prop-types'
 import darkCross from './../assets/dark/xmark.svg'
 import lightCross from './../assets/light/xmark.svg'

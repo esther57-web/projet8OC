@@ -12,13 +12,14 @@ export const ThemeProvider = ({ children }) => {
         setTheme(savedTheme);
       }
     }, []);
+
   
     const toggleTheme = () => {
       const newTheme = theme === 'light' ? 'dark' : 'light';
       setTheme(newTheme);
       localStorage.setItem('theme', newTheme);
-      document.documentElement.classList.remove(theme);
-    document.documentElement.classList.add(newTheme);
+      //document.documentElement.classList.remove(theme);
+    //document.documentElement.classList.add(newTheme);
     };
   
     return (
