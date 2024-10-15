@@ -14,12 +14,11 @@ const AboutMe = () => {
             <div className='xs:w-[80%] lg:w-[50%] flex xs:flex-col xs:gap-4 xs:relative xs:bottom-16 md:gap-6'>
                 <h2 className={`lg:text-start bg-clip-text text-transparent ${theme === "dark" ? "bg-h2-white-gradient" : ""}`}>À propos <br className='xs:hidden'/>de moi</h2>
                 <p className='xs:text-center lg:text-start xs:text-xs sm:text-sm lg:text-lg'>Développeuse web full stack passionnée. Je suis motivée, autonome et organisée,
-                 ce qui me permet de travailler efficacement en full remote. En raison de mon handicap, 
-                 je recherche des opportunités qui valorisent la flexibilité et l&apos;inclusion. 
+                 ce qui me permet de travailler efficacement. Je recherche des opportunités qui valorisent la flexibilité et l&apos;inclusion. 
                  Je suis impatiente de mettre mes compétences en développement à profit et de contribuer 
                  à des projets innovants.</p>
                  <div className='flex xs:justify-center lg:justify-start'>
-                    <Cta content='Embauchez-moi'/>
+                    <Cta content='Contactez-moi'/>
                  </div>
                 
             </div>

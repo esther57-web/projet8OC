@@ -19,7 +19,7 @@ const Hero = () => {
                <span className='animate-pulse xs:text-3xl xs:font-bold ml-2 lg:text-[4rem] lg:h-[4rem]'>|</span>  
             </div>
             
-            <p className='xs:text-center md:text-start  md:border-l-[1px] md:border-white md:border-transparent md:px-2'>Je suis développeuse front-end en full-remote</p>
+            <p className='xs:text-center md:text-start  md:border-l-[1px] md:border-white md:border-transparent md:px-2'>Je suis développeuse full-stack junior</p>
             <div className='w-full flex xs:justify-center md:justify-start'><Cta content="Contactez-moi"/></div>
             
         </div>

@@ -140,20 +140,60 @@ export const portfolioProjects = [
     name: 'Booki',
     technologies: ['HTML', 'CSS'],
     image: '',
-    liveUrl: '',
-    description: '',
+    liveUrl: 'https://esther57-web.github.io/projet2OC/',
+    description: `Dans ce projet, j'ai été chargé de créer la page d'accueil d'une agence de voyage en utilisant HTML et CSS. Ma mission principale était d'intégrer l'interface responsive de leur site.`,
     category: 'Front-end',
-    repo: '',
-    skill: ''
+    repo: 'https://github.com/esther57-web/projet2OC.git',
+    skill: [
+      'Intégration de maquette',
+      'Responsive'
+    ]
   },
   {
-    name: '',
-    technologies: ['', ''],
+    name: 'Sophie Bluel',
+    technologies: ['Javascript'],
+    image: '',
+    liveUrl: 'https://esther57-web.github.io/projet3OC/',
+    description: `Dans ce projet, j'ai été engagé à créer une page web dynamique pour le site internet d'une architecte d'intérieur en utilisant JavaScript et en communiquant avec une API.`,
+    category: 'Front-end',
+    repo: 'https://github.com/esther57-web/projet3OC.git',
+    skill: [
+      'Gérer les événements utilisateurs avec JavaScript',
+      'Manipuler les éléments du DOM avec JavaScript',
+      'Récupérer les données utilisateurs dans le JavaScript via des formulaires',
+      'Communiquer via une API'
+    ]
+  },
+  {
+    name: 'Kasa',
+    technologies: ['React', 'Sass'],
+    image: '',
+    liveUrl: 'https://projet5-oc.vercel.app/',
+    description: `Dans ce projet, j'ai implémenté le front-end d’une application en utilisant React et React Router pour créer une expérience utilisateur moderne et réactive.`,
+    category: 'Front-end',
+    repo: 'https://github.com/esther57-web/projet5OC.git',
+    skill: [
+      'Développer une interface web avec Sass',
+      `Configurer la navigation entre les pages de l'application avec React Router`,
+      `Développer des éléments de l'interface d'un site web grâce à des composants React`,
+      'Mettre en œuvre des animations CSS',
+      'Initialiser une application avec Vite'
+    ]
+  },
+  {
+    name: 'Mon Vieux Grimoire',
+    technologies: ['Node.js', 'Express', 'MongoDB'],
     image: '',
     liveUrl: '',
-    description: '',
-    category: '',
-    repo: '',
-    skill: ''
-  },
+    description: `Ce projet m'a amené à développer le back-end d'un site de notation de livres.`,
+    category: 'Back-end',
+    repo: 'https://github.com/esther57-web/projet6OC.git',
+    skill: [
+      `Création d'un serveur Express`,
+      `Connexion à une base de données MongoDB`,
+      'Utilisation du modèle CRUD',
+      `Système d'authentification sécurisée`,
+      `Utilisation de Mongoose et du modèle MVC`
+    ]
+  }
 ]
