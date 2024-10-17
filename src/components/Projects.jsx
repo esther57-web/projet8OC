@@ -49,10 +49,10 @@ const Projects = () => {
                                     <img className='w-full' src={projectpic} alt={`projet ${project.name}`}></img>
                             </picture>
                             <div className='hidden group-hover:absolute group-hover:flex hover:justify-center hover:items-center hover:flex-col top-0 left-0 w-full h-full bg-black/30 transition duration-[3000ms]'>
-                                <h4>{project.name}</h4>
+                                <h4 className='text-white font-bold'>{project.name}</h4>
                                 <div className='flex gap-2'>
                                     {project.technologies.map((technology, id)=>(
-                                        <h5 key={id}>{technology}</h5>
+                                        <h5 className='text-white font-bold' key={id}>{technology}</h5>
                                     ))}
                                 </div>
                             </div>

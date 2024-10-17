@@ -35,7 +35,7 @@ export default {
           'blue-gradient' : 'linear-gradient(to right, #190042, #0320BD,#190042 )',
 
           'light-blue-gradient': 'linear-gradient(to right, #04DBDB, #0804DB)',
-          'profil-gradient-light': 'linear-gradient(to top, #0804DB, #FFFFFF, #FFFFFF)',
+          'profil-gradient-light': 'linear-gradient(to bottom, #FFFFFF, #C5C5C5, #828282)',
           'hero-gradient-light': 'linear-gradient(to top right, #9CE6FF, #FFFFFF, #FFFFFF)'
           
         },   
