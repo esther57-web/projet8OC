@@ -1,27 +1,27 @@
 const navCategories = [
   {
     name: "Accueil",
-    link: "/"
+    link: ""
   },
   {
     name: "Présentation",
-    link: "/presentation"
+    link: "presentation"
   },
   {
     name: "Compétences",
-    link: "/competences"
+    link: "competences"
   },
   {
     name: "Projets",
-    link: "/projets"
+    link: "projets"
   },
   {
     name: "Contact",
-    link: "/contact"
+    link: "contact"
   },
   {
-    name: "Mon CV",
-    link: "/mon-cv"
+    name: "CV",
+    link: "mon-cv"
   }
 ];
 

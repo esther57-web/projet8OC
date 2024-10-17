@@ -7,13 +7,13 @@ import lightLinkedin from './../assets/light/linkedin.svg'
 const Social = () => {
   const { theme } = useTheme();
   return (
-    <aside className='z-40 fixed top-1/2 right-0 mr-4'>
+    <aside className='z-40 fixed xs:top-[20%] sm:top-1/2 right-0 mr-4'>
       <div className='flex flex-col gap-4'>
         <a href='https://www.linkedin.com/in/esther-ossete-kamardine-8115a3277/'>
-          <img className='xs:w-8' src={theme === 'dark' ? darkLinkedin : lightLinkedin}></img>
+          <img className='xs:w-8' src={theme === 'dark' ? darkLinkedin : lightLinkedin} alt='lien vers linkedin'></img>
         </a>
         <a href='https://github.com/esther57-web'>
-          <img className='xs:w-8' src={theme === 'dark' ? darkGithub : lightGithub}></img>
+          <img className='xs:w-8' src={theme === 'dark' ? darkGithub : lightGithub} alt='lien vers github'></img>
         </a>
       </div>
     </aside>
