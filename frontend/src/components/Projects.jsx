@@ -1,7 +1,6 @@
 import { useTheme } from './../context/context.jsx'
 import { portfolioProjects } from '../data/data.js';
 import { useState } from 'react';
-import projectpic from './../assets/projects/booki-computer.png'
 import ModalComponent from './Modal.jsx';
 import { Element } from 'react-scroll';
 
@@ -40,19 +39,18 @@ const Projects = () => {
                     </h3>
                 ))}
             </div>
-            <div className='xs:flex xs:flex-col xs:gap-4 xs:w-[70%] md:grid md:grid-cols-2 lg:grid-cols-3'>
+            <div className='xs:flex xs:flex-col xs:gap-4 xs:w-[70%] sm:grid sm:grid-cols-2 lg:grid-cols-3'>
             {portfolioProjects.map((project, index)=> (
                     <div key={index}>
-                       <figure onClick={() => openModal(index)} className={`relative group xs:w-[100%] cursor-pointer ${filterCategory === project.category || filterCategory === 'Tous' ? "flex" : "hidden"}`}>
-                            <picture className=''>
-                                    <source></source>
-                                    <img className='w-full' src={projectpic} alt={`projet ${project.name}`}></img>
-                            </picture>
-                            <div className='hidden group-hover:absolute group-hover:flex hover:justify-center hover:items-center hover:flex-col top-0 left-0 w-full h-full bg-black/30 transition duration-[3000ms]'>
+                       <figure onClick={() => openModal(index)} className={`relative group  cursor-pointer ${theme === 'light'? 'black-shadow' : ''} ${filterCategory === project.category || filterCategory === 'Tous' ? "flex" : "hidden"}`}>
+                            
+                            <img className='xs:rounded-sm max-w-full h-auto object-center' src={project.image} alt={`projet ${project.name}`}></img>
+                            
+                            <div className='hidden xs:rounded-sm group-hover:absolute group-hover:flex hover:justify-center hover:items-center hover:flex-col top-0 left-0 w-full h-full bg-black/30 transition duration-[3000ms]'>
                                 <h4 className='text-white font-bold'>{project.name}</h4>
                                 <div className='flex gap-2'>
                                     {project.technologies.map((technology, id)=>(
-                                        <h5 className='text-white font-bold' key={id}>{technology}</h5>
+                                        <h5 className='text-white font-bold xs:text-xs' key={id}>{technology}</h5>
                                     ))}
                                 </div>
                             </div>

@@ -6,6 +6,7 @@ import stars from './../assets/dark/stars.png'
 import download from './../assets/dark/download-solid.svg'
 import cv from './../assets/cv-esther.pdf'
 import { Link } from 'react-scroll';
+import {motion} from 'framer-motion'
 
 
 const Hero = () => {
@@ -20,12 +21,12 @@ const Hero = () => {
                <span className='animate-pulse xs:text-3xl xs:font-bold ml-2 lg:text-[4rem] lg:h-[4rem]'>|</span>  
             </div>
             
-            <p className='xs:text-center md:text-start  md:border-l-[1px] md:border-white md:border-transparent md:px-2'>Bienvenue dans mon portfolio ! Je suis développeuse full-stack junior et je serais ravie de travailler avec vous</p>
+            <p className='xs:text-center xs:text-xs sm:text-sm md:text-start  md:border-l-[1px] md:border-white md:border-transparent md:px-2'>Bienvenue dans mon portfolio ! Je suis développeuse full-stack junior et je serais ravie de travailler avec vous</p>
             <Link to='contact' smooth={true} duration={500} spy={true} className='w-full flex xs:justify-center md:justify-start'><Cta content="Contactez-moi"/></Link>
             
         </div>
         <div className='z-20 md:relative md:top-12 lg:top-24'>
-            <a href={cv} target="_blank" className={`xs:absolute xs:left-[65%] xs:top-[35%] sm:left-[60%] md:left-[85%] md:top-[4rem] lg:top-[8rem] z-20 h-20 w-20 flex cursor-pointer flex-col items-center justify-center rounded-full md:relative ${theme === "dark" ? "hover:shadow-[5px_5px_50px_-20px] bg-pink" : "hover:shadow-[5px_5px_40px_-10px_hsl(#000000)] bg-purple"}`}>
+            <a href={cv} target="_blank" className={`xs:absolute xs:left-[65%] xs:top-[35%] sm:left-[60%] md:left-[85%] md:top-[4rem] lg:top-[8rem] z-20 xs:h-[70px] xs:w-[70px] sm:h-20 sm:w-20 flex cursor-pointer flex-col items-center justify-center rounded-full md:relative ${theme === "dark" ? "hover:shadow-[5px_5px_50px_-20px] bg-pink" : "hover:shadow-[5px_5px_40px_-10px_hsl(#000000)] bg-purple"}`}>
                 <img className='w-6' src={download} alt='bouton ouvrir le cv'></img>
                 <p className={`text-xs text-white font-bold`}>Ouvrir CV</p>
             </a> 
@@ -37,13 +38,13 @@ const Hero = () => {
         {theme === "dark" ? 
         <div className='z-[1]'>
             <div className='absolute z-0 inset-0 bg-[radial-gradient(75%_75%_at_center_center,rgb(140,69,255,.5)_15%,rgb(14,0,36,.5)_78%,transparent)]'></div> 
-            <div className='absolute xs:h-[280px] xs:w-[280px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-50 border rounded-full'>
+            <motion.div className='absolute xs:h-[280px] xs:w-[280px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-50 border rounded-full'>
                 <div className='absolute h-2 w-2 left-0 bg-white rounded-full top-1/2 -translate-x-1/2 -translate-y-1/2'></div>
                 <div className='absolute h-2 w-2 left-1/2 bg-white rounded-full top-0 -translate-x-1/2 -translate-y-1/2'></div>
                 <div className='absolute h-5 w-5 left-full border border-white rounded-full top-1/2 -translate-x-1/2 -translate-y-1/2 inline-flex items-center justify-center'>
                     <div className='h-2 w-2 bg-white'></div>
                 </div>
-            </div>
+            </motion.div>
             <div className='xs:hidden ms:block absolute  xs:h-[420px] xs:w-[420px] rounded-full border border-white/30 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-dashed'></div>
             <div className='xs:hidden sm:block absolute w-max-full h-[550px] w-[550px] rounded-full border border-white opacity-30 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
                 <div className='absolute h-2 w-2 left-0 bg-white rounded-full top-1/2 -translate-x-1/2 -translate-y-1/2'></div>

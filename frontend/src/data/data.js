@@ -135,11 +135,16 @@ export const allSkills = [
   }
 ];
 
+import bookiImg from './../assets/projects/booki-computer.png'
+import sophieImg from './../assets/projects/projet3.png'
+import kasaImg from './../assets/projects/projet5.png'
+import grimoireImg from './../assets/projects/projet6.png'
+
 export const portfolioProjects = [
   {
     name: 'Booki',
     technologies: ['HTML', 'CSS'],
-    image: '',
+    image: bookiImg,
     liveUrl: 'https://esther57-web.github.io/projet2OC/',
     description: `Dans ce projet, j'ai été chargé de créer la page d'accueil d'une agence de voyage en utilisant HTML et CSS. Ma mission principale était d'intégrer l'interface responsive de leur site.`,
     category: 'Front-end',
@@ -152,7 +157,7 @@ export const portfolioProjects = [
   {
     name: 'Sophie Bluel',
     technologies: ['Javascript'],
-    image: '',
+    image: sophieImg,
     liveUrl: 'https://esther57-web.github.io/projet3OC/',
     description: `Dans ce projet, j'ai été engagé à créer une page web dynamique pour le site internet d'une architecte d'intérieur en utilisant JavaScript et en communiquant avec une API.`,
     category: 'Front-end',
@@ -167,7 +172,7 @@ export const portfolioProjects = [
   {
     name: 'Kasa',
     technologies: ['React', 'Sass'],
-    image: '',
+    image: kasaImg,
     liveUrl: 'https://projet5-oc.vercel.app/',
     description: `Dans ce projet, j'ai implémenté le front-end d’une application en utilisant React et React Router pour créer une expérience utilisateur moderne et réactive.`,
     category: 'Front-end',
@@ -183,7 +188,7 @@ export const portfolioProjects = [
   {
     name: 'Mon Vieux Grimoire',
     technologies: ['Node.js', 'Express', 'MongoDB'],
-    image: '',
+    image: grimoireImg,
     liveUrl: '',
     description: `Ce projet m'a amené à développer le back-end d'un site de notation de livres.`,
     category: 'Back-end',
