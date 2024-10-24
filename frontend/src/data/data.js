@@ -64,6 +64,31 @@ export const activitiesSlider = [
     name: 'Maintenance',
     darkImg: darkMaintenance,
     lightImg: lightMaintenance
+  },
+  {
+    name: 'Développement web',
+    darkImg: darkCode,
+    lightImg: lightCode
+  },
+  {
+    name: 'Responsive',
+    darkImg: darkResponsive,
+    lightImg: lightResponsive
+  },
+  {
+    name: 'Référencement',
+    darkImg: darkRef,
+    lightImg: lightRef
+  },
+  {
+    name: 'Accessibilité',
+    darkImg: darkAccess,
+    lightImg: lightAccess
+  },
+  {
+    name: 'Maintenance',
+    darkImg: darkMaintenance,
+    lightImg: lightMaintenance
   }
 ];
 

@@ -6,10 +6,14 @@ import { useTheme } from './../context/context.jsx'
 
 const ModalComponent = ({ onClose, content}) => {
     const { theme } = useTheme();
+
+    const handleClick = (event) => {
+        event.stopPropagation(); 
+    };
   
     return (
-        <div className={`z-50 fixed inset-0 flex items-center justify-center bg-black bg-opacity-20`}>
-        <div className={`border border-white xs:w-[80%] sm:w-[60%] max-h-svh ${theme === "dark" ? "dark" : "light"}`}>
+        <div onClick={onClose} className={`z-50 fixed inset-0 flex items-center justify-center bg-black bg-opacity-20`}>
+        <div onClick={handleClick} className={`border border-white xs:w-[80%] sm:w-[60%] max-h-svh ${theme === "dark" ? "dark" : "light"}`}>
             <div className={`flex justify-center items-center border-b-[1px] border-transparent xs:p-3 ${theme === "dark" ? "border-white/50" : "border-gray/50"}`}>
                 <h5 className='flex justify-center'>{content.name}</h5>
                 <img onClick={onClose} className='ml-auto cursor-pointer' src={theme === "dark" ? darkCross : lightCross} alt='icône fermer la modale'></img>

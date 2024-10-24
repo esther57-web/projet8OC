@@ -33,6 +33,7 @@ export default {
           'h2-white-gradient': 'linear-gradient(to right, #B4B4B4, #FFFFFF, #B4B4B4)',
           'dark-blue-pp': 'linear-gradient(to right, #190042, #200022)',
           'blue-gradient' : 'linear-gradient(to right, #190042, #0320BD,#190042 )',
+          'dark-blue-pp-bg': 'linear-gradient(to top left, #200022, #190042, #020617, #020617, #000000 )',
 
           'light-blue-gradient': 'linear-gradient(to right, #04DBDB, #0804DB)',
           'profil-gradient-light': 'linear-gradient(to bottom, #FFFFFF, #C5C5C5, #828282)',

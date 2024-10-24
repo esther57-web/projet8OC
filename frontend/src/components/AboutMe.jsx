@@ -7,7 +7,7 @@ import { Link } from 'react-scroll';
 const AboutMe = () => {
     const { theme } = useTheme();
   return (
-    <section id='presentation' className={`flex justify-center py-16 lg:py-32`}>
+    <section id='presentation' className={`flex justify-center py-16 lg:py-32 ${theme === 'dark' ? 'bg-dark-blue-pp-bg' : ''}`}>
         <div className='flex xs:flex-col xs:items-center lg:flex-row lg:w-[80%] lg:justify-center'>
             <div className='flex justify-center lg:w-[50%]'>
                 <img className='rounded-full xs:w-[18rem] xs:h-[18rem] lg:w-[24rem] lg:h-[24rem]' src={theme === "dark" ? darkAbout : lightAbout} alt='image d&apos;un ordinateur'></img>
@@ -23,6 +23,7 @@ const AboutMe = () => {
                  </Link>
                 
             </div>
+            
         </div>
     </section>
   )

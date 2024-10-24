@@ -6,14 +6,27 @@ import stars from './../assets/dark/stars.png'
 import download from './../assets/dark/download-solid.svg'
 import cv from './../assets/cv-esther.pdf'
 import { Link } from 'react-scroll';
-import {motion} from 'framer-motion'
+import { motion, useScroll, useTransform } from 'framer-motion'
+import { useRef } from 'react';
 
 
 const Hero = () => {
     const { theme } = useTheme();
+    const sectionRef = useRef(null)
+    const {scrollYProgress} = useScroll({
+        target: sectionRef,
+        offset: ['start end', 'end start']
+    })
+
+    const backgroundPositionY = useTransform(scrollYProgress, [0, 1], [-300, 300])
   
   return (
-    <section className={`flex h-screen xs:flex-col-reverse xs:items-center xs:justify-center overflow-hidden md:flex-row md:px-8`} style={{backgroundImage: `url(${theme === "dark" ? stars : ""})`}}>
+    <motion.section className={`flex h-screen xs:flex-col-reverse xs:items-center xs:justify-center overflow-hidden md:flex-row md:px-8`} 
+    ref={sectionRef}
+    style={{
+        backgroundImage: `url(${theme === "dark" ? stars : ""})`,
+        backgroundPositionY
+    }}>
         
         <div className='z-30 xs:relative xs:top-40 md:-top-2  flex xs:flex-col xs:items-center md:items-start xs:gap-4 xs:w-[80%] md:w-[40%] md:initial md:gap-8'>
             <div className='flex'>
@@ -38,23 +51,60 @@ const Hero = () => {
         {theme === "dark" ? 
         <div className='z-[1]'>
             <div className='absolute z-0 inset-0 bg-[radial-gradient(75%_75%_at_center_center,rgb(140,69,255,.5)_15%,rgb(14,0,36,.5)_78%,transparent)]'></div> 
-            <motion.div className='absolute xs:h-[280px] xs:w-[280px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-50 border rounded-full'>
+            <motion.div 
+            style={{
+                translateX:'-50%',
+                translateY:'-50%'
+            }}
+            animate={{
+                rotate:'1turn'
+            }}
+            transition={{
+                duration: 40,
+                repeat: Infinity,
+                ease: 'linear'
+            }}
+             className='absolute xs:h-[280px] xs:w-[280px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-50 border rounded-full'>
                 <div className='absolute h-2 w-2 left-0 bg-white rounded-full top-1/2 -translate-x-1/2 -translate-y-1/2'></div>
                 <div className='absolute h-2 w-2 left-1/2 bg-white rounded-full top-0 -translate-x-1/2 -translate-y-1/2'></div>
                 <div className='absolute h-5 w-5 left-full border border-white rounded-full top-1/2 -translate-x-1/2 -translate-y-1/2 inline-flex items-center justify-center'>
                     <div className='h-2 w-2 bg-white'></div>
                 </div>
             </motion.div>
-            <div className='xs:hidden ms:block absolute  xs:h-[420px] xs:w-[420px] rounded-full border border-white/30 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-dashed'></div>
-            <div className='xs:hidden sm:block absolute w-max-full h-[550px] w-[550px] rounded-full border border-white opacity-30 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
+            <motion.div 
+            style={{
+                translateX:'-50%',
+                translateY:'-50%'
+            }}
+            animate={{
+                rotate:'-1turn'
+            }}
+            transition={{
+                duration: 40,
+                repeat: Infinity,
+                ease: 'linear'
+            }} className='xs:hidden ms:block absolute  xs:h-[420px] xs:w-[420px] rounded-full border border-white/30 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-dashed'></motion.div>
+            <motion.div
+            style={{
+                translateX:'-50%',
+                translateY:'-50%'
+            }}
+            animate={{
+                rotate:'1turn'
+            }}
+            transition={{
+                duration: 100,
+                repeat: Infinity,
+                ease: 'linear'
+            }} className='xs:hidden sm:block absolute w-max-full h-[550px] w-[550px] rounded-full border border-white opacity-30 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
                 <div className='absolute h-2 w-2 left-0 bg-white rounded-full top-1/2 -translate-x-1/2 -translate-y-1/2'></div>
                 <div className='absolute h-2 w-2 left-0 bg-white rounded-full top-1/2 -translate-x-1/2 -translate-y-1/2'></div>
                     <div className='absolute h-5 w-5 left-full border border-white rounded-full top-1/2 -translate-x-1/2 -translate-y-1/2 inline-flex items-center justify-center'>
                         <div className='h-2 w-2 bg-white'></div>
                     </div>
-            </div>
+            </motion.div>
         </div> : ""}  
-    </section>
+    </motion.section>
   )
 }
 
