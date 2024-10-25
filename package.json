@@ -2,5 +2,10 @@
   "dependencies": {
     "express": "^4.21.1",
     "path": "^0.12.7"
+  },
+  "scripts": {
+    "start": "cd backend && node server.js",
+    "run": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build"
   }
 }
