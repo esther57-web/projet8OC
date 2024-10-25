@@ -10,7 +10,7 @@ import darkCross from './../assets/dark/xmark.svg'
 import lightCross from './../assets/light/xmark.svg'
 import navCategories from '../data/data.js'
 import cv from './../assets/cv-esther.pdf'
-import { Link , animateScroll as scroll} from 'react-scroll'
+import { Link } from 'react-scroll'
 
 const Navbar = () => {
     
