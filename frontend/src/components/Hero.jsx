@@ -1,7 +1,7 @@
 import { useTheme } from './../context/context.jsx'
 import Cta from './Cta.jsx';
-import darkProfilPic from './../assets/femme.png'
-import lightProfilPic from './../assets/femme-noire.png'
+import darkProfilPic from './../assets/dark/hero-dark.png'
+import lightProfilPic from './../assets/light/hero-light.png'
 import stars from './../assets/dark/stars.png'
 import download from './../assets/dark/download-solid.svg'
 import cv from './../assets/cv-esther.pdf'
@@ -28,13 +28,13 @@ const Hero = () => {
         backgroundPositionY
     }}>
         
-        <div className='z-30 xs:relative xs:top-40 md:-top-2  flex xs:flex-col xs:items-center md:items-start xs:gap-4 xs:w-[80%] md:w-[40%] md:initial md:gap-8'>
+        <div className={`z-30 xs:relative  flex xs:flex-col xs:items-center md:items-start xs:gap-4 xs:w-[80%] md:w-[40%] md:initial md:gap-8  md:-top-2 ${theme === 'dark' ? 'xs:top-40' : 'xs:top-48'}`}>
             <div className='flex'>
                <h1 className={`${theme === 'dark' ? "bg-dark-text-gradient" : "bg-black"} flex items-center bg-clip-text text-transparent xs:text-3xl xs:font-bold sm:text-[3rem] typing-animation lg:text-[4rem] lg:h-[4rem]`}>Kamardine Esther</h1>
                <span className='animate-pulse xs:text-3xl xs:font-bold ml-2 lg:text-[4rem] lg:h-[4rem]'>|</span>  
             </div>
             
-            <p className='xs:text-center xs:text-xs sm:text-sm md:text-start  md:border-l-[1px] md:border-white md:border-transparent md:px-2'>Bienvenue dans mon portfolio ! Je suis développeuse full-stack junior et je serais ravie de travailler avec vous</p>
+            <p className='xs:text-center xs:text-xs sm:text-sm md:text-start  md:border-l-[1px] md:border-white md:border-transparent md:px-2'>Bienvenue dans mon portfolio ! Je suis développeuse full-stack junior et je serais ravie de travailler avec vous !</p>
             <Link to='contact' smooth={true} duration={500} spy={true} className='w-full flex xs:justify-center md:justify-start'><Cta content="Contactez-moi"/></Link>
             
         </div>
@@ -43,8 +43,8 @@ const Hero = () => {
                 <img className='w-6' src={download} alt='bouton ouvrir le cv'></img>
                 <p className={`text-xs text-white font-bold`}>Ouvrir CV</p>
             </a> 
-            <div className={`z-[2] xs:absolute xs:overflow-y-hidden xs:overflow-x-visible xs:w-[220px] xs:flex xs:justify-center xs:rounded-full border xs:top-1/2 xs:left-1/2 -translate-x-1/2 -translate-y-1/2 md:static md:transform-none md:mb-44 md:ml-32 md:w-[300px] lg:w-[400px] lg:ml-28 xl:w-[500px] xl:ml-16 ${theme === "dark" ? "bg-purple border-white/20 bg-[radial-gradient(50%_50%_at_16.8%_18.3%,white,rgb(184,148,255)_37.7%,rgb(24,0,66))] shadow-[-20px_-20px_50px_rgb(255,255,255,.5),-20px_-20px_80px_rgb(255,255,255,.1),0_0_50px_rgb(140,69,255)]" : "border-none bg-profil-gradient-light"}`}>
-                <img className='relative top-4' src={theme === "dark" ? darkProfilPic : lightProfilPic} alt='photo d&apos;Esther'></img>
+            <div className={`z-[2] xs:absolute xs:overflow-y-hidden xs:overflow-x-visible xs:w-[220px] xs:flex xs:justify-center xs:rounded-full border xs:top-1/2 xs:left-1/2 -translate-x-1/2 -translate-y-1/2 md:static md:transform-none md:mb-44 md:ml-32 sm:w-[300px] lg:w-[400px] lg:ml-28 xl:w-[500px] xl:ml-16 ${theme === "dark" ? "bg-purple border-white/20 bg-[radial-gradient(50%_50%_at_16.8%_18.3%,white,rgb(184,148,255)_37.7%,rgb(24,0,66))] shadow-[-20px_-20px_50px_rgb(255,255,255,.5),-20px_-20px_80px_rgb(255,255,255,.1),0_0_50px_rgb(140,69,255)]" : "border-none bg-profil-gradient-light"}`}>
+                <img className={`relative top-4 ${theme === 'dark' ? '' : 'xs:right-2'}`} src={theme === "dark" ? darkProfilPic : lightProfilPic} alt='photo d&apos;Esther'></img>
             </div> 
         </div>
         
