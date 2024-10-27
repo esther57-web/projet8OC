@@ -70,7 +70,7 @@ const Hero = () => {
         transition={{
             duration:1
         }}
-        className={`${theme === 'dark' ? '' : "sm:top-6"} z-20 sm:relative md:top-12 lg:top-24`}>
+        className={`${theme === 'dark' ? '' : "sm:relative sm:top-6"} z-20 md:relative md:top-12 lg:top-24`}>
             <a href={cv} target="_blank" className={`xs:absolute xs:left-[65%] xs:top-[35%] sm:bottom-[8rem] sm:left-[9rem] md:left-[80%] md:top-[6rem] lg:top-[6rem] z-20 xs:h-[70px] xs:w-[70px] sm:h-20 sm:w-20 flex cursor-pointer flex-col items-center justify-center rounded-full sm:relative ${theme === "dark" ? "hover:shadow-[5px_5px_50px_-20px] bg-pink" : "hover:shadow-[5px_5px_40px_-10px_hsl(#000000)] bg-purple"}`}>
                 <img className='w-6' src={download} alt='bouton ouvrir le cv'></img>
                 <p className={`text-xs text-white font-bold`}>Ouvrir CV</p>

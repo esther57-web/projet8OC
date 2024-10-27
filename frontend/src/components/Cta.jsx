@@ -5,7 +5,7 @@ const Cta = (props) => {
     const { theme } = useTheme();
 
   return (
-    <button className={`${theme === "dark" ? "relative bg-gradient-to-b from-[#190d2e] to-[#4a208a] shadow-[0px_0px_12px_#8c45ff] hover:shadow-[0px_0px_16px_5px_#8c45ff]" : "bg-black hover:shadow-[0px_0px_5px_2px_#000011]"} xs:px-6 xs:py-2 rounded-[20px] w-auto md:px-12 md:py-4 md:rounded-[60px]`} aria-label={props.content}>
+    <button className={`${theme === "dark" ? "relative bg-gradient-to-b from-[#190d2e] to-[#4a208a] shadow-[0px_0px_12px_#8c45ff] hover:shadow-[0px_0px_16px_5px_#8c45ff]" : "bg-black hover:shadow-[0px_0px_5px_2px_#BDBDBD]"} hover:scale-[1.1] xs:px-6 xs:py-2 rounded-[20px] w-auto md:px-12 md:py-4 md:rounded-[60px]`} aria-label={props.content}>
       <div className='absolute '>
         <div className='border xs:rounded-[20px] md:rounded-[60px] border-white/20 absolute inset-0 [mask-image:linear-gradient(to_bottom,black,transparent)]'></div>
         <div className='border xs:rounded-[20px] md:rounded-[60px] absolute inset-0 border-white/40 [mask-image:linear-gradient(to_top,black,transparent)]'></div>
