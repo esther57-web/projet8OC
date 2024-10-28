@@ -54,7 +54,7 @@ const Hero = () => {
                <span className='animate-pulse xs:text-3xl xs:font-bold ml-2 lg:text-[4rem] lg:h-[4rem]'>|</span>  
             </div>
             
-            <p className='xs:text-center xs:text-xs sm:text-sm md:text-start  md:border-l-[1px] md:border-white md:border-transparent md:px-2'>Bienvenue dans mon portfolio ! Je suis développeuse full-stack junior et je serais ravie de travailler avec vous !</p>
+            <p className='xs:text-center xs:text-xs sm:text-sm md:text-start  md:border-l-[1px] md:border-white md:border-transparent md:px-2'>Bienvenue dans mon portfolio ! Je suis développeuse full-stack et je serais ravie de travailler avec vous !</p>
             <Link to='contact' smooth={true} duration={500} spy={true} className='w-fit flex xs:justify-center md:justify-start'><Cta content="Contactez-moi"/></Link>
             
         </motion.div>
