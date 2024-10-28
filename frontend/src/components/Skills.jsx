@@ -18,7 +18,7 @@ const Skills = () => {
             <div className='xs:py-6 sm:grid sm:grid-cols-2'>
                 {allSkills.map((skill, index)=>(
                     <div className={`flex xs:py-2 xs:justify-center xs:items-center xs:gap-4 border-y-[1px] border-transparent sm:justify-start sm:pl-[30%] md:py-3 lg:pl-[30%] lg:py-4  ${theme === "dark" ? "border-white/50" : "border-black/40"}`} key={index}>
-                            <img className='lg:w-[2rem]' src={theme === "dark" ? skill.darkSkill : skill.lightSkill} alt={`icône ${skill.name}`}></img>
+                            <img className='lg:w-[2rem] hover:scale-[1.5]' src={theme === "dark" ? skill.darkSkill : skill.lightSkill} alt={`icône ${skill.name}`}></img>
                             <h3 className={`md:text-lg lg:text-xl`}>{skill.name}</h3>        
                     </div>
                 ))}
