@@ -43,7 +43,7 @@ const Contact = () => {
                     pour discuter de projets passionnants.
                 </p>
                 <div className='flex m-auto border rounded-xl xs:py-1 xs:px-4 xs:mt-2 w-fit'>
-                    <p className='xs:text-center'>kamardine.ossete@gmail.com</p>
+                    <p className='xs:text-center xs:text-sm'>kamardine.ossete@gmail.com</p>
                 </div>
                 
             </div>

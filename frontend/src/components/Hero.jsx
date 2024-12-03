@@ -96,7 +96,7 @@ const Hero = () => {
                 repeat: Infinity,
                 ease: 'linear'
             }}
-             className='absolute xs:h-[228px] xs:w-[228px] sm:h-[350px] sm:w-[350px] md:h-[300px] md:w-[300px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-50 border rounded-full'>
+             className='xs:hidden sm:block absolute sm:h-[350px] sm:w-[350px] md:h-[300px] md:w-[300px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-50 border rounded-full'>
                 <div className='absolute h-2 w-2 left-0 bg-white rounded-full top-1/2 -translate-x-1/2 -translate-y-1/2'></div>
                 <div className='absolute h-2 w-2 left-1/2 bg-white rounded-full top-0 -translate-x-1/2 -translate-y-1/2'></div>
                 <div className='absolute h-5 w-5 left-full border border-white rounded-full top-1/2 -translate-x-1/2 -translate-y-1/2 inline-flex items-center justify-center'>
