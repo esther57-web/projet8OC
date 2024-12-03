@@ -183,7 +183,7 @@ export const portfolioProjects = [
     name: 'Sophie Bluel',
     technologies: ['Javascript'],
     image: sophieImg,
-    liveUrl: 'https://esther57-web.github.io/projet3OC/',
+    liveUrl: '',
     description: `Dans ce projet, j'ai été engagé à créer une page web dynamique pour le site internet d'une architecte d'intérieur en utilisant JavaScript et en communiquant avec une API.`,
     category: 'Front-end',
     repo: 'https://github.com/esther57-web/projet3OC.git',

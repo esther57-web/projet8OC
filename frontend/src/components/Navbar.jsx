@@ -44,7 +44,7 @@ const Navbar = () => {
             <div className='flex xs:absolute xs:left-1/2 xs:transform xs:-translate-x-1/2 sm:right-0 sm:left-auto sm:transform-none lg:relative'>     
                 <img className='xs:w-2 lg:w-4' src={theme === "dark" ? darkMoon : lightMoon} alt='icône lune'></img>
                 <label htmlFor="check" className={`${theme === 'dark' ? 'bg-pink' : 'bg-black'} mx-1 flex rounded-full xs:w-8 xs:h-4  relative lg:w-16 lg:h-8 cursor-pointer`}>
-                    <input onChange={toggleTheme} type="checkbox" id="check" className='x-centered sr-only peer'></input>
+                    <input onChange={toggleTheme} type="checkbox" id="check" className='toggle-btn x-centered sr-only peer'></input>
                     <span className={`${theme === 'dark' ? 'peer-checked:bg-white' : 'peer-checked:bg-white'} w-2/5 h-4/5 bg-white absolute rounded-full xs:left-0.5 xs:top-0.5 lg:left-1 lg:top-1  xs:peer-checked:left-4 lg:peer-checked:left-9 transition-all duration-500`}></span>
                 </label>
                 <img src={theme === "dark" ? darkSun : lightSun} className='xs:w-2 lg:w-4' alt='icône soleil'></img>             
